@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'fonts';
+@import 'ScrollBar.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $palette-white;
+}
+
+body {
+    @include scrollbars(10px, $palette-cyan-xx-dark, $palette-black);
+    background-color: $palette-black;
+    background: no-repeat center url('../assets/background.png');
+    font-family: 'Gilroy', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 1rem;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+}
+
+.dna {
+    max-width: 50px;
+}
